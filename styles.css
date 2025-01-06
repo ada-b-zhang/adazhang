@@ -36,6 +36,7 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 header nav ul li a:hover {
@@ -56,10 +57,11 @@ h1 {
     color: #4b0082;
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 30px;
 }
 
 h2 {
-    color: #6a0dad;
+    color: #4b0082;
 }
 
 p {
@@ -73,7 +75,7 @@ p {
     width: 150px;
     height: auto;
     object-fit: fill;
-    border: 3px solid #6a0dad;
+    /* border: 3px solid #ffffff; */
 }
 
 /* Gallery */
