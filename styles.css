@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f6fc;
@@ -57,10 +57,17 @@ h1 {
     color: #4b0082;
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 h2 {
+    margin-bottom: 0.05rem;
+    margin-top: 0.05rem;
+    text-align: left;
+    color: #4b0082;
+}
+
+h4 {
     color: #4b0082;
 }
 
@@ -189,3 +196,48 @@ footer {
     font-size: 20px;    
     color: #4b0082;    
 }
+
+/* Profile Header Section */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Name Styling */
+.profile-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #4b0082;
+}
+
+/* Profile Content Section */
+.profile-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content h2 {
+    margin-bottom: 0.05rem;
+    margin-top: 0.05rem;
+    text-align: center;
+    color: #4b0082;
+}
+
+
