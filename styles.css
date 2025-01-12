@@ -67,12 +67,21 @@ h2 {
     color: #4b0082;
 }
 
+h3 {
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
 h4 {
     color: #4b0082;
+    margin-bottom: 0.001rem;
 }
 
 p {
     line-height: 1.6;
+    margin-top: 0.1rem;
 }
 
 /* About Page Specific Styles */
