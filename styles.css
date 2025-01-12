@@ -68,14 +68,23 @@ p {
     line-height: 1.6;
 }
 
-/* Profile Picture */
-.profile-picture {
-    display: block;
-    margin: 0 auto 1rem auto;
-    width: 150px;
-    height: auto;
-    object-fit: fill;
-    /* border: 3px solid #ffffff; */
+/* About Page Specific Styles */
+.about-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-section img.profile-picture {
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px;
+    object-fit: contain; 
+    flex-shrink: 0;
+}
+
+.about-section .text-content {
+    flex-grow: 1;
 }
 
 /* Gallery */
@@ -89,8 +98,8 @@ p {
 
 .gallery img {
     width: 200px;
-    height: 200px; 
-    object-fit: cover; 
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
