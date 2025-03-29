@@ -228,6 +228,30 @@ footer {
     justify-content: center;   
 }
 
+.contact-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-links li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #4b0082;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-links li a:hover {
+    text-decoration: underline;
+}
+
+
 /* Profile Header Section */
 .profile-header {
     display: flex;
