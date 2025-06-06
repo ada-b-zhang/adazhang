@@ -1,60 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Other - Ada Zhang</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
         h1, p {
             text-align: center;
         }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .gallery img {
+            width: 160px;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        .lightbox.show {
+            display: flex;
+        }
+
+        .lightbox:after {
+            content: "Click anywhere to close";
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="other.html">Other</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="main-flex-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <img src="images/ada.jpg" alt="Ada Zhang" class="profile-picture">
+            <nav>
+                <ul>
+                    <p></p>
+                    <a href="index.html">ABOUT</a><br>
+                    <a href="background.html">BACKGROUND</a><br>
+                    <a href="projects.html">PROJECTS</a><br>
+                    <a href="publications.html">PUBLICATIONS</a><br>
+                    <a href="contact.html">CONTACT</a><br>
+                    <a href="other.html">OTHER</a>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        <section>
-            <h1>Calligraphy</h1>
-            <p>Calligraphy is one of my favorite hobbies, and here are some of my creations. Let me know if you're getting married :)</p>
-            <div class="gallery">
-                <img src="images/calligraphy2.jpg" alt="Calligraphy Sample 2">
-                <img src="images/calligraphy4.jpg" alt="Calligraphy Sample 4">
-                <img src="images/calligraphy3.jpg" alt="Calligraphy Sample 3">
-                <img src="images/calligraphy5.jpg" alt="Calligraphy Sample 5">
-                <img src="images/calligraphy6.jpg" alt="Calligraphy Sample 6">
-                <img src="images/calligraphy1.jpg" alt="Calligraphy Sample 1">
-            </div>
-        </section>
+        <!-- Scrollable Right Content -->
+        <div class="scrollable-content">
+            <section class="profile-content">
+                <h2>Calligraphy</h2>
+                <p class="left-align">Calligraphy is one of my favorite hobbies. Here are some of my creations. Let me know if you're getting married :)</p>
+                <div class="gallery">
+                    <img src="images/calligraphy2.jpg" alt="Calligraphy 2" onclick="openLightbox(this.src)">
+                    <img src="images/calligraphy4.jpg" alt="Calligraphy 4" onclick="openLightbox(this.src)">
+                    <img src="images/calligraphy3.jpg" alt="Calligraphy 3" onclick="openLightbox(this.src)">
+                    <img src="images/calligraphy5.jpg" alt="Calligraphy 5" onclick="openLightbox(this.src)">
+                    <img src="images/calligraphy6.jpg" alt="Calligraphy 6" onclick="openLightbox(this.src)">
+                    <img src="images/calligraphy1.jpg" alt="Calligraphy 1" onclick="openLightbox(this.src)">
+                </div>
+            </section>
 
-        <section>
-            <h1>Violin</h1>
-            <p>Classical violin is a significant part of my life! Here are some photos from past performances:</p>
-            <div class="gallery">
-                <img src="images/violin1.jpg" alt="Ada playing violin 1">
-                <img src="images/violin2.jpg" alt="Ada playing violin 2">
-                <img src="images/violin3.jpg" alt="Ada playing violin 3">
-                <img src="images/violin4.jpg" alt="Ada playing violin 4">
-                <img src="images/violin5.jpg" alt="Ada playing violin 5">
-            </div>
-        </section>
+            <section class="profile-content">
+                <h2>Violin</h2>
+                <p class="left-align">Classical violin is a significant part of my life! Here are some photos from past performances:</p>
+                <div class="gallery">
+                    <img src="images/violin1.jpg" alt="Violin 1" onclick="openLightbox(this.src)">
+                    <img src="images/violin2.jpg" alt="Violin 2" onclick="openLightbox(this.src)">
+                    <img src="images/violin3.jpg" alt="Violin 3" onclick="openLightbox(this.src)">
+                    <img src="images/violin4.jpg" alt="Violin 4" onclick="openLightbox(this.src)">
+                    <img src="images/violin5.jpg" alt="Violin 5" onclick="openLightbox(this.src)">
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Ada Zhang. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Full Size" />
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById("lightbox");
+            const img = document.getElementById("lightbox-img");
+            img.src = src;
+            lightbox.classList.add("show");
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").classList.remove("show");
+        }
+    </script>
 </body>
 </html>

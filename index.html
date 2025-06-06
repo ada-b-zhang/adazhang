@@ -7,73 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="other.html">Other</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Picture and Name -->
-        <section class="profile-header">
+    <!-- Main Content -->
+    <main class="main-flex-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
             <img src="images/ada.jpg" alt="Ada Zhang" class="profile-picture">
-            <h1>Ada Zhang</h1>
-        </section>
+                <nav>
+                    <ul>
+                        <p></p>
+                        <a href="index.html">ABOUT</a><br>
+                        <a href="background.html">BACKGROUND</a><br>
+                        <a href="projects.html">PROJECTS</a><br>
+                        <a href="publications.html">PUBLICATIONS</a><br>
+                        <a href="contact.html">CONTACT</a><br>
+                        <a href="other.html">OTHER</a>
+                    </ul>
+                </nav>
+        </aside>
 
-        <!-- Writing -->
-        <section class="profile-content">
-            <h2>About Me</h2>
-            <p>I'm Ada, a Data Scientist with a passion for uncovering insights from data and making data-driven decisions. Currently, I do research on large language models at the Bill & Melinda Gates Foundation. I'm also a calligrapher and classical violinist. Welcome to my personal website!</p>
-        </section>
 
-        <section class="profile-content">
-            <h2>Why I Chose Data Science</h2>
-            <h4>Inspiration from John Tukey 😃</h4>
-            <p>John Tukey once said, “The best thing about being a statistician is that you get to play in everyone's backyard.” This quote resonated deeply with me and was a major reason why I pursued statistics, which naturally led me to data science. It’s applicable to pretty much any field!</p>
-
-            <h4>A Perfect Blend of Programming and Statistics 💻</h4>
-            <p>In high school, A.P. Statistics was my favorite class. I enjoyed my coding classes in college and the logical problem-solving they required. Data science is the perfect combination of these two subjects, bringing the best of both worlds together!</p>
-
-            <h4>Data Science Aligns with my Personality 💁🏻‍♀️</h4>
-            <ul>
-                <li>I like organization, and data scientists need to organize their data in order to make sense of it! My friends tell me "you're the most organized person I know."</li>
-                <li>I like to make decisions based on data, which is the heart of data science!</li>
-                <li>I like details. Just like a data scientist should validate their results, I naturally double-check everything, ensuring accuracy and reliability in my work.</li>
-            </ul>
-        </section>
-
-        <section class="profile-content">
-            <h2>It’s All in the Name</h2>
-
-            <h4>A Technical Name 👩🏻‍💻</h4>
-            <ul>
-                <li>Ada is a technical name! My name coincidentally has many connections to artificial intelligence. When my parents named me, they had no idea I would go into AI!</li>
-                <li>Ada Lovelace was the world’s first computer scientist.</li>
-                <li>There’s even a programming language called Ada.</li>
-            </ul>
+        <!-- Scrollable Content -->
+        <div class="scrollable-content">
             
-            <h4>Rhymes with “Data” 📊</h4>
-            <p>It’s pronounced “dayduh”, not “dadduh” 😆.</p>
-            
-            <h4>OpenAI's Embedding Model 🤓</h4>
-            <p>OpenAI has an embedding model called `text-embedding-ada-002`.</p>
-            
-            <h4>Sounds like Eta (η)</h4>
-            <p>Ada sounds like the Greek letter eta, η, which is the learning rate in the gradient descent algorithm. I LOVE to learn (as a child, I’d count down the days until school started)!</p>
-            <p>There is another, more advanced version of the vanilla gradient descent algorithm, called Adaptive Gradient, or AdaGrad. Instead of a fixed learning rate, the learning rate adjusts, much like people do in real life. I love how machine learning algorithms reflect human learning!</p>
-            <p>There's also AdaFactor, AdaDelta, AdaBoost, AdaNet, etc.</p>
-        </section>
+            <section class="profile-content">
+                <h1 class="big-name">Ada Zhang</h1>
+                <h2>About Me</h2>
+                <p>I'm Ada, a Data Scientist with a passion for uncovering insights from data and making data-driven decisions. Currently, I do research on large language models at the Bill & Melinda Gates Foundation. I'm also a calligrapher and classical violinist. Welcome to my personal website!</p>
+            </section>
+
+            <section class="profile-content">
+                <h2>Why I Chose Data Science</h2>
+                <p>John Tukey once said, “The best thing about being a statistician is that you get to play in everyone's backyard.” This quote resonated deeply with me and was a major reason why I pursued statistics, which naturally led me to data science. It’s applicable to pretty much any field!</p>
+                <p>Data science is a perfect blend of programming and statistics. In high school, A.P. Statistics was my favorite class. I enjoyed my coding classes in college and the logical problem-solving they required. Data science is the perfect combination of these two subjects, bringing the best of both worlds together.</p>
+                <p>Also, data science aligns with my personality. I like organization, and data scientists need to organize their data in order to make sense of it! My friends tell me "you're the most organized person I know." I like to make decisions based on data, which is the heart of data science! Also, I like details. Just like a data scientist should validate their results, I naturally double-check everything, ensuring accuracy and reliability in my work.</p>
+            </section>
+
+            <section class="profile-content">
+                <h2>It’s All in the Name</h2>
+                <p>Ada is a very technical name, for several reasons. Ada Lovelace was the world’s first computer scientist, there's a programming language called Ada, and it rhymes with "data." These connections to artificial intelligence are purely coincidental. When my parents named me, they had no idea I would go into AI!</p>
+                <p>Ada sounds like the Greek letter eta, η, which is the learning rate in the gradient descent algorithm. I LOVE to learn (as a child, I’d count down the days until school started)! There is another, more advanced version of the vanilla gradient descent algorithm, called Adaptive Gradient, or AdaGrad. Instead of a fixed learning rate, the learning rate adjusts, much like people do in real life. I love how machine learning algorithms reflect human learning! There's also AdaFactor, AdaDelta, AdaBoost, AdaNet, etc.</p>
+            </section>
+
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Ada Zhang. All rights reserved.</p>
-    </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science</title>
+    <title>Publications - Ada Zhang</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .tile-container {
@@ -11,6 +11,7 @@
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 20px;
+            margin-bottom: 3rem;
         }
 
         .tile {
@@ -39,50 +40,48 @@
             font-size: 14px;
             color: #cfcdd1;
         }
-
-        h1, p {
-            text-align: center; 
-        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="other.html">Other</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="main-flex-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="images/ada.jpg" alt="Ada Zhang" class="profile-picture">
+            <nav>
+                <ul>
+                    <p></p>
+                    <a href="index.html">ABOUT</a><br>
+                    <a href="background.html">BACKGROUND</a><br>
+                    <a href="projects.html">PROJECTS</a><br>
+                    <a href="publications.html">PUBLICATIONS</a><br>
+                    <a href="contact.html">CONTACT</a><br>
+                    <a href="other.html">OTHER</a>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        <section>
-            <h1>Publications</h1>
-            <p>Statistics, data science, AI, and anything related.</p>
+        <!-- Scrollable Content -->
+        <div class="scrollable-content">
+            <section class="profile-content">
+                <h2>Publications</h2>
+                <p>Statistics, data science, AI, and anything related.</p>
 
-            <div class="tile-container">
-                <div class="tile" onclick="window.open('https://medium.com/@abz200026/linear-regression-explained-1453aeee8fbb', '_blank')">
-                    <span class="project-title">Linear Regression Explained</span>
-                    <span class="project-description">An explanation of linear regression concepts.</span>
+                <div class="tile-container">
+                    <div class="tile" onclick="window.open('https://medium.com/@abz200026/linear-regression-explained-1453aeee8fbb', '_blank')">
+                        <span class="project-title">Linear Regression Explained</span>
+                        <span class="project-description">An explanation of linear regression concepts.</span>
+                    </div>
+                    <div class="tile" onclick="window.open('https://medium.com/@abz200026/image-generation-via-diffusion-b74d3e3e2fc6', '_blank')">
+                        <span class="project-title">Image Generation via Diffusion</span>
+                        <span class="project-description">How to use AI to generate images.</span>
+                    </div>
+                    <div class="tile" onclick="window.open('https://useitc.com/industry-insights/the-cyber-nightmare-personal-information-on-the-world-wide-spider-web/', '_blank')">
+                        <span class="project-title">The Cyber Nightmare: Personal Information on the World-Wide (Spider) Web</span>
+                        <span class="project-description">How to keep your personal information safe.</span>
+                    </div>
                 </div>
-                <div class="tile" onclick="window.open('https://medium.com/@abz200026/image-generation-via-diffusion-b74d3e3e2fc6', '_blank')">
-                    <span class="project-title">Image Generation via Diffusion</span>
-                    <span class="project-description">How to use AI to generate images.</span>
-                </div>
-                <div class="tile" onclick="window.open('https://useitc.com/industry-insights/the-cyber-nightmare-personal-information-on-the-world-wide-spider-web/', '_blank')">
-                    <span class="project-title">The Cyber Nightmare: Personal Information on the World-Wide (Spider) Web</span>
-                    <span class="project-description">How to keep your personal information safe.</span>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Ada Zhang. All rights reserved.</p>
-    </footer>
 </body>
 </html>

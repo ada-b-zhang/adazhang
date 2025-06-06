@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Projects - Ada Zhang</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
         .tile-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 20px;
+            margin-bottom: 3rem;
         }
 
         .tile {
@@ -39,87 +40,85 @@
             font-size: 14px;
             color: #cfcdd1;
         }
-
-        h1, p {
-            text-align: center; 
-        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="other.html">Other</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="main-flex-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="images/ada.jpg" alt="Ada Zhang" class="profile-picture">
+            <nav>
+                <ul>
+                    <p></p>
+                    <a href="index.html">ABOUT</a><br>
+                    <a href="background.html">BACKGROUND</a><br>
+                    <a href="projects.html">PROJECTS</a><br>
+                    <a href="publications.html">PUBLICATIONS</a><br>
+                    <a href="contact.html">CONTACT</a><br>
+                    <a href="other.html">OTHER</a>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        <section>
-            <h1>Data Science Projects</h1>
-            <p>Here are some of the projects I've worked on. Click on the tiles to explore!</p>
+        <!-- Scrollable Content -->
+        <div class="scrollable-content">
+            <section class="profile-content">
+                <h2>Projects</h2>
+                <p>Here are some of the projects I've worked on. Click on the tiles to explore!</p>
 
-            <div class="tile-container">
-                <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/Pic2Vec.git', '_blank')">
-                    <span class="project-title">Pic2Vec 🔍</span>
-                    <span class="project-description">Unsupervised image retrieval system using deep learning.</span>
+                <div class="tile-container">
+                    <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/Pic2Vec.git', '_blank')">
+                        <span class="project-title">Pic2Vec 🔍</span>
+                        <span class="project-description">Unsupervised image retrieval system using deep learning.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://price-your-car.streamlit.app/', '_blank')">
+                        <span class="project-title">What is the Value of Your Car? 🚙</span>
+                        <span class="project-description">Estimate the value of your car with artificial intelligence.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/bird-sightings.git', '_blank')">
+                        <span class="project-title">Bird Forecast 🦜</span>
+                        <span class="project-description">Predict bird species sightings based on historical data.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://ada-b-zhang.shinyapps.io/Homework6/', '_blank')">
+                        <span class="project-title">Swiss Interactive Visualizations 📈</span>
+                        <span class="project-description">Interactive data visualizations of the Swiss dataset.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/linear-regression-app.git', '_blank')">
+                        <span class="project-title">Linear Regression & Quantum Computing 💻</span>
+                        <span class="project-description">Learn linear regression and explore the intersection of machine learning and quantum computing.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://sentiment-analysis-with-nlp.streamlit.app/', '_blank')">
+                        <span class="project-title">Sentiment Analysis App 😊</span>
+                        <span class="project-description">A web app for analyzing text sentiment.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/classify_stars.git', '_blank')">
+                        <span class="project-title">NASA Star Classification ⭐</span>
+                        <span class="project-description">Classify stars using machine learning.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://github.com/Claire-ONeill/Zillow-housing-investigation.git', '_blank')">
+                        <span class="project-title">Zillow Housing Investigation 🏠</span>
+                        <span class="project-description">Analyze housing prices in the United States.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://github.com/camccaffrey/STAT4630.git', '_blank')">
+                        <span class="project-title">Predict a City's Average Income 🌃</span>
+                        <span class="project-description">Use statistical machine learning to predict a city's average income.</span>
+                    </div>
+
+                    <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/dodgeball.git', '_blank')">
+                        <span class="project-title">Dodgeball Game 🎯</span>
+                        <span class="project-description">Play a game of dodgeball.</span>
+                    </div>
                 </div>
-
-                <div class="tile" onclick="window.open('https://price-your-car.streamlit.app/', '_blank')">
-                    <span class="project-title">What is the Value of Your Car? 🚙</span>
-                    <span class="project-description">Estimate the value of your car with artificial intelligence.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/bird-sightings.git', '_blank')">
-                    <span class="project-title">Bird Forecast 🦜</span>
-                    <span class="project-description">Predict bird species sightings based on historical data.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://ada-b-zhang.shinyapps.io/Homework6/', '_blank')">
-                    <span class="project-title">Swiss Interactive Visualizations 📈</span>
-                    <span class="project-description">Interactive data visualizations of the Swiss dataset.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/linear-regression-app.git', '_blank')">
-                    <span class="project-title">Linear Regression & Quantum Computing 💻</span>
-                    <span class="project-description">Learn linear regression and explore the intersection of machine learning and quantum computing.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://sentiment-analysis-with-nlp.streamlit.app/', '_blank')">
-                    <span class="project-title">Sentiment Analysis App 😊</span>
-                    <span class="project-description">A web app for analyzing text sentiment.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/classify_stars.git', '_blank')">
-                    <span class="project-title">NASA Star Classification ⭐</span>
-                    <span class="project-description">Classify stars using machine learning.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://github.com/Claire-ONeill/Zillow-housing-investigation.git', '_blank')">
-                    <span class="project-title">Zillow Housing Investigation 🏠</span>
-                    <span class="project-description">Analyze housing prices in the United States.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://github.com/camccaffrey/STAT4630.git', '_blank')">
-                    <span class="project-title">Predict a City's Average Income 🌃</span>
-                    <span class="project-description">Use statistical machine learning to predict a city's average income.</span>
-                </div>
-
-                <div class="tile" onclick="window.open('https://github.com/ada-b-zhang/dodgeball.git', '_blank')">
-                    <span class="project-title">Dodgeball Game 🎯</span>
-                    <span class="project-description">Play a game of dodgeball.</span>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Ada Zhang. All rights reserved.</p>
-    </footer>
 </body>
 </html>
