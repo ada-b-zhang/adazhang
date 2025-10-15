@@ -500,7 +500,7 @@ body {
 
 .about-me-image {
     float: right; 
-    width: 50%; 
+    /* width: 50%;  */
     max-width: 300px; 
     height: auto;
     margin-left: 20px; 
